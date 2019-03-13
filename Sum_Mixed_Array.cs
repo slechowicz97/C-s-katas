@@ -6,13 +6,7 @@ namespace Sum_Mixed_Array
     {
         public static int SumMix(object[] x)
         {
-            int a = 0, sum = 0;
-            for (int i = 0; i < x.Length; i++)
-            {
-                a = System.Convert.ToInt32(x[i]);
-                sum = sum + a;
-            }
-            return sum;
+            return x.Sum(Convert.ToInt32);
         }
 
         static void Main(string[] args)
